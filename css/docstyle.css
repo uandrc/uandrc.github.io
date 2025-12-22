@@ -1,0 +1,14 @@
+body {
+    max-width: 650px;
+    font-size: medium; /* small, medium, large, xx% here */
+}
+
+pre,
+code {
+    font-size: 130%;
+}
+
+/* text snippet to indent a little */
+p.indent {
+    margin-left: 25px;
+}
