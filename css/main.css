@@ -1,3 +1,5 @@
+/* Original .css file source: https://kevinboone.me/css/main.css */
+
 ul {
     list-style-type: square;
     line-height: 1.45em;
@@ -9,7 +11,14 @@ li {
     margin-left: 2em;
 }
 
+p {
+    line-height: 1.45em;
+    margin-bottom: 0.5em;
+    margin-top: 0;
+}
+
 body {
+    padding-top: 82px; /* maybe remove */
 }
 
 a {
@@ -26,25 +35,12 @@ a:hover {
 }
 
 #content {
-    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1em;
     max-width: 50em;
     position: relative;
     padding: 0px
-}
-
-.cv-date {
-    font-weight: bold;
-}
-
-.cv-list {
-    list-style-type: none;
-}
-
-.cv-skill {
-    font-weight: bold;
 }
 
 figure {
@@ -70,17 +66,17 @@ figcaption {
     font-size: smaller;
 }
 
+/*
 header {
-    /*background: #fff;*/
     background: black;
     width: 100%;
     height: 82px;
     position: fixed;
     top: 0;
     left: 0;
-    /*border-bottom: 4px solid #4C9CF1;*/
     z-index: 100;
-}
+}*/
+
 
 h1 {
     font-family: Helvetica Neue, Helvetica, Arial, serif;
@@ -111,7 +107,7 @@ h3 {
 
 h4 {
     font-size: 1.1em;
-    color: #black;
+    color: black;
     line-height: 1.1em;
     margin-top: 1em;
     margin-bottom: 0.3em;
@@ -122,12 +118,6 @@ h4 {
     justify-content: center;
     font-size: 3em;
     font-family: Helvetica Neue, Helvetica, Arial, serif;
-}
-
-p {
-    line-height: 1.45em;
-    margin-bottom: 0.5em;
-    margin-top: 0;
 }
 
 pre {
