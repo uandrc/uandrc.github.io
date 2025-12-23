@@ -2,47 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>MVC</title>
+    <meta name="description" content="MVC">
+    <meta name="author" content="Andrew Chen">
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-<title>MVC</title>
+<div id="content">
+    <h1>Model, View, Controller</h1>
+    <h3>A Great Design Pattern</h3>
 
-<h1>Model, View, Controller</h1>
-<h3>A Great Design Pattern</h3>
+    <p>
+        When I was learning to program, I learned to separate my classes.
+        Intuitively, it made sense to isolate the logic side of code from the display side of it.
+        This is the classic backend/frontend structure used by most apps. However, when I learned
+        about the MVC design pattern, I began to understand how much separation was truly needed
+        to make code as maintainable as possible.
+    </p>
 
-<p>
-    When I was learning to program, I learned to separate my classes.
-    Intuitively, it made sense to isolate the logic side of code from the display side of it.
-    This is the classic backend/frontend structure used by most apps. However, when I learned
-    about the MVC design pattern, I began to understand how much separation was truly needed
-    to make code as maintainable as possible.
-</p>
+    <p>
+        The MVC structure is as such:
+    </p>
 
-<p>
-    The MVC structure is as such:
-</p>
+    <ul>
+        <li>
+            (M)odel: Contains core code logic
+        </li>
+        <li>
+            (V)iew: Contains anything the user will view (CLI/GUI)
+        </li>
+        <li>
+            (C)ontroller: Controls the behavior of the model and view
+        </li>
+    </ul>
 
-<ul>
-    <li>
-        (M)odel: Contains core code logic
-    </li>
-    <li>
-        (V)iew: Contains anything the user will view (CLI/GUI)
-    </li>
-    <li>
-        (C)ontroller: Controls the behavior of the model and view
-    </li>
-</ul>
+    <p>
+        In MVC, the model and view are kept completely isolated from each other. Each package does
+        not know the other exists.
+    </p>
 
-<p>
-    In MVC, the model and view are kept completely isolated from each other. Each package does
-    not know the other exists.
-</p>
+    <!-- Insert download link to zip file of MVC Example.java -->
+    <p>
+        For an example of MVC applied to a Java swing app, download <a href="">this</a> project
+        file.
+    </p>
 
-<!-- Insert download link to zip file of MVC Example.java -->
-<p>
-    For an example of MVC applied to a Java swing app, download <a href="">this</a> project
-    file.
-</p>
+</div>
 </body>
 </html>

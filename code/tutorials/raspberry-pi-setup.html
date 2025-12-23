@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Raspberry Pi Setup</title>
+
+    <h1>How to Set Up a Raspberry Pi</h1>
+
+    <p>A Raspberry Pi is a small computer. Here is how to start using one.</p>
+    <em>For simplicity, this tutorial assumes you are using a Raspberry Pi 2 Model B or above (among
+        the most common models). Setup for other Raspberry Pis varies slightly, but generally follow
+        the steps listed below.</em>
+
+    <h2>You will need:</h2>
+    <ul>
+        <li>Raspberry Pi (wow!)</li>
+        <li>Unused (formatted) micro SD card*</li>
+        <li>USB-C or Micro USB Power supply (dependent on Raspberry Pi model)</li>
+        <li>HDMI or micro HDMI cable (dependent on Raspberry Pi model)</li>
+        <li>Mouse</li>
+        <li>Keyboard</li>
+        <li>Monitor</li>
+        <li>Monitor power supply</li>
+    </ul>
+    <em>*<strong>Important</strong>: The micro SD card will be overwritten in the OS-installation
+        process. Ensure there is
+        absolutely nothing you will miss on the card before proceeding!</em>
+
+    <h2>Instructions:</h2>
+    <ol>
+        <li>Install and run the <a href="https://www.raspberrypi.com/software/">Raspberry Pi
+            Imager</a>.
+        </li>
+        <li>Insert your micro SD card into your computer.</li>
+        <li>If you are not familiar with Linux, select <em>"Raspberry Pi OS (64-bit)"</em> as your
+            chosen
+            OS. Otherwise, select an OS of your choosing*.
+        </li>
+        <li>Remove the micro SD card from your computer and insert it into your Raspberry Pi.</li>
+        <li>Plug one end of the HDMI cable into the Raspberry Pi and the other end into the
+            monitor.*
+        </li>
+        <li>Plug the monitor into its power supply.</li>
+        <li>Plug the Raspberry Pi power supply into an outlet.</li>
+        <li>Turn the monitor on, then connect the Raspberry Pi with its power supply.</li>
+        <li>Wait for the Raspberry Pi to boot.</li>
+    </ol>
+
+    <!-- change the below two notes to footnote citations, like in latex or wikipedia sources
+    when you click on the citation note they anchor down to the source below -->
+
+    <em>*Note: If your Raspberry Pi has two HDMI ports, plug your main monitor into the HDMI0
+        port.</em>
+
+    <em>Note: Raspberry Pi Imager allows you to select a custom .img file for your Pi's
+        OS. This enables you to install Windows 11 and other OS on your Raspberry Pi.</em>
+
+    <h2>Turning a Raspberry Pi off</h2>
+    <p>Turning a Raspberry Pi on is as simple as pie: you plug it in. However, turning a Raspberry
+        Pi off is not as simple as unplugging it while it is on. In fact, doing so can cause
+        the micro SD card to corrupt and break your OS.
+    </p>
+
+    <p>To properly turn your Raspberry Pi off:</p>
+
+    <ol>
+        <li>Open a terminal window.</li>
+        <li>Enter the following command: <code>sudo shutdown -h now</code></li>
+        <li>Wait for the screen to go completely black (this may take several seconds, be
+            patient!)
+        </li>
+        <li>Unplug your Raspberry Pi from its power source.</li>
+        <li>Turn off your monitor.</li>
+    </ol>
+
+    <p><em>For official setup documentation, read <a
+            href="https://www.raspberrypi.com/documentation/computers/getting-started.html">this</a>
+        tutorial.</em></p>
+</head>
+<body>
+
+</body>
+</html>
