@@ -1,4 +1,4 @@
-/* ===== Navbar base ===== */
+/* ===== Base navbar ===== */
 .navbar {
     position: fixed;
     top: 0;
@@ -9,14 +9,14 @@
     z-index: 1000;
 }
 
-.navbar-inverse {
-    background-color: #222;
-    border-color: #080808;
-}
-
 .navbar-fixed-top {
     top: 0;
     border-width: 0 0 1px;
+}
+
+.navbar-inverse {
+    background-color: #222;
+    border-color: #080808;
 }
 
 /* ===== Container ===== */
@@ -25,7 +25,11 @@
     padding-left: 15px;
 }
 
-/* ===== Brand ===== */
+/* ===== Header / brand ===== */
+.navbar-header {
+    float: left;
+}
+
 .navbar-brand {
     float: left;
     height: 50px;
@@ -44,11 +48,15 @@
     color: #fff;
 }
 
-/* ===== Nav links ===== */
-.navbar-nav {
-    margin: 0;
+/* ===== Navigation list ===== */
+.nav {
     padding-left: 0;
+    margin: 0;
     list-style: none;
+}
+
+.navbar-nav {
+    float: left;
 }
 
 .navbar-nav > li {
@@ -67,29 +75,15 @@
     background-color: transparent;
 }
 
-/* ===== Collapse (desktop default) ===== */
+/* ===== Collapse container (desktop default) ===== */
 .navbar-collapse {
     overflow-x: visible;
     border-top: 0;
 }
 
-/* ===== Toggle button ===== */
+/* ===== Toggle button (hamburger) ===== */
 .navbar-toggle {
-    position: relative;
-    float: right;
-    padding: 9px 10px;
-    margin: 8px 15px;
-    background-color: transparent;
-    border: 1px solid #333;
-}
-
-.navbar-toggle .icon-bar {
-    display: block;
-    width: 22px;
-    height: 2px;
-    background-color: #fff;
-    border-radius: 1px;
-    margin: 4px 0;
+    display: none; /* desktop only */
 }
 
 /* ===== Screen reader only ===== */
