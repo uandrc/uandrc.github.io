@@ -1,96 +1,60 @@
-/* ===== Base navbar ===== */
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    min-height: 50px;
-    margin-bottom: 20px;
-    border: 1px solid transparent;
-    z-index: 1000;
-}
-
 .navbar-fixed-top {
-    top: 0;
-    border-width: 0 0 1px;
-}
-
-.navbar-inverse {
-    background-color: #222;
-    border-color: #080808;
-}
-
-/* ===== Container ===== */
-.container-fluid {
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-/* ===== Header / brand ===== */
-.navbar-header {
-    float: left;
+    border: 0;
 }
 
 .navbar-brand {
-    float: left;
-    height: 50px;
-    padding: 15px;
-    font-size: 18px;
+    font-family: 'PT Sans Narrow', 'Open Sans Condensed', 'Open Sans', Tahoma,Verdana,Segoe,sans-serif;
+    /*font-weight: 700;*/
+    font-variant-numeric: slashed-zero;
+    font-size: 25px;
     line-height: 20px;
-    color: #9d9d9d;
-    text-decoration: none;
+    text-shadow: 0px 0px 2px #fff;
+    color: lightgray !important;
 }
 
-.navbar-inverse .navbar-brand {
-    color: #9d9d9d;
+.navbar-brand:hover {
+    color: white !important;
 }
 
-.navbar-inverse .navbar-brand:hover {
-    color: #fff;
+
+.navbar-nav>li>a {
+    line-height:22px
 }
 
-/* ===== Navigation list ===== */
-.nav {
-    padding-left: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.navbar-nav {
-    float: left;
-}
-
-.navbar-nav > li {
-    float: left;
-}
-
-.navbar-nav > li > a {
-    padding: 15px;
-    line-height: 20px;
-    color: #9d9d9d;
-    text-decoration: none;
-}
-
-.navbar-inverse .navbar-nav > li > a:hover {
-    color: #fff;
-    background-color: transparent;
-}
-
-/* ===== Collapse container (desktop default) ===== */
-.navbar-collapse {
-    overflow-x: visible;
-    border-top: 0;
-}
-
-/* ===== Toggle button (hamburger) ===== */
-.navbar-toggle {
-    display: none; /* desktop only */
-}
-
-/* ===== Screen reader only ===== */
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
+@media (max-width: 980px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in {
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
 }
