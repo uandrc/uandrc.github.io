@@ -1,0 +1,34 @@
+TODO:
+
+tutorials:
+	how to control computers remotely with ssh -> quick tutorial, and show practicality (file-sharing, remote control, etc.)
+	how to set up a headless raspberry pi (links to above ssh tutorial)
+	"a major advantage of a headless setup is that you do not need a monitor - one of the essentials typically needed for a Pi."
+
+	how to install a virtual machine
+	how to make a bootable USB flash drive
+		"with a bootable USB flash drive, you can run Windows, Kali Linux, Raspberry Pi, and more on your computer - even if 		your computer's OS does not match the bootable drive's OS."
+
+	host a website on your raspberry pi (hostname -I IP address, var/www directory)
+
+	take a picture using raspberry pi (USB webcam)
+		"you can purchase a raspberry pi camera, but a cheaper and more accessible way of taking pictures is with a
+		standard USB webcam"
+
+	how to make a backup of your Raspberry Pi micro SD card
+		cloning instructions so if the card gets corrupted you aren't in trouble
+
+	how to run a NAS server on your Raspberry Pi
+		https://www.raspberrypi.com/tutorials/nas-box-raspberry-pi-tutorial/
+		https://www.youtube.com/watch?v=gyMpI8csWis
+
+	how to run a printer server on a raspberry pi to wirelessly print (samba server)
+
+	how to use Linux commands (cd, ls, mkdir, rm, mv, cp, man, the basics. Explain each command by comparing the GUI and CLI,
+	e.g. for ls, display Linux gui showing all folders and then show ls in termainl also displaying all folders)
+
+---
+	food
+		The food checklist
+		The food log
+		recipes
