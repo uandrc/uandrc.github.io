@@ -136,3 +136,36 @@ pre {
         margin-right: 0.5em;
     }
 }
+
+
+/* ==== HARD RESET OF BOOTSTRAP TYPOGRAPHY ==== */
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, serif;
+    font-size: 16px;
+    line-height: 1.45em;
+}
+
+h1, h2, h3, h4 {
+    font-family: Helvetica Neue, Helvetica, Arial, serif;
+    color: #2262AD;
+}
+
+h1 {
+    font-size: 2em;
+    line-height: 1.15em;
+}
+
+h2 {
+    font-size: 1.5em;
+    line-height: 1.15em;
+}
+
+h3 {
+    font-size: 1.2em;
+    line-height: 1.1em;
+}
+
+h4 {
+    font-size: 1.1em;
+    line-height: 1.1em;
+}
