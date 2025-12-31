@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>How to Create a JAR file</title>
+    <meta name="description" content="Create a jar file">
+    <meta name="author" content="Andrew Chen">
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+<div id="content">
+    {% include navbar.html %}
+    <h1>How to Create a JAR file</h1>
+
+    <p>A <a href="https://en.wikipedia.org/wiki/JAR_(file_format)">JAR</a> (<strong>J</strong>ava
+        <strong>Ar</strong>chive) file enables you to bundle several Java assets (classes,
+        image/sound resources, etc.) into a single file. It is very useful for app distribution.
+    <p> Here is how to make a <code>.jar</code> file in IntelliJ.</p>
+
+    <h2>Instructions:</h2>
+    <h3>Setup</h3>
+    <ol>
+        <li>Verify your Java project compiles and runs without errors.</li>
+        <li>Verify your Java project uses a JDK: Go to <strong>File -> Project Structure ->
+            SDK</strong>. Ensure a Java SDK is selected.
+        </li>
+    </ol>
+
+    <h3>Create a JAR file</h3>
+    <ol>
+        <li>In IntelliJ, go to <strong>File -> Project Structure</strong>.</li>
+        <li>Select <strong>Artifacts</strong> from the left sidebar.</li>
+        <li>Click the <strong>+</strong> button.</li>
+        <li>Choose <strong>JAR -> From modules with dependencies</strong>.</li>
+        <li>In the window that appears, select the Main class (i.e., the class containing the
+            <code>main</code> method).
+        </li>
+        <li>Click <strong>OK</strong>.</li>
+        <li>Click <strong>OK</strong> in the Project Structure window.</li>
+        <li>From the IntelliJ menu bar, go to <strong>Build -> Build Artifacts -> Build</strong>
+        </li>
+        <li>Navigate to the <code>out/artifacts</code> directory in your project. Look for
+            <code>your-project-name.jar</code>.
+        </li>
+        <li>Run your <code>.jar</code> file by right-clicking on it and selecting <strong>Run
+            <code>'your-project-name.jar'</code></strong>.
+        </li>
+    </ol>
+
+    <h3>More</h3>
+    <p>To convert your <code>.jar</code> file into an <code>.exe</code> file, read <a
+            href="convert-java-to-exe.html">this</a>.</p>
+</div>
+</body>
+</html>

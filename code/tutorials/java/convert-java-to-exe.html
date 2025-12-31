@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>How to Convert a java file into an exe file</title>
+    <meta name="description" content="Convert java to exe">
+    <meta name="author" content="Andrew Chen">
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+<div id="content">
+    {% include navbar.html %}
+    <h1>How to Convert a <code>java</code> file into an <code>exe</code> file</h1>
+    <p>The average software user does not have Java installed, nor knows how to run
+        <code>.java</code> files.
+        Converting a <code>.java</code> file into the more recognized <code>.exe</code> file is
+        important for app distribution.</p>
+
+    <h2>Instructions:</h2>
+    <h3>Setup</h3>
+    <ol>
+        <li><a href="create-a-jar-file.html">Create a JAR file</a> of your Java project.</li>
+        <li>Verify your JAR file runs without errors.</li>
+    </ol>
+
+    <h3>Create an .exe file</h3>
+    <ol>
+        <li>Download and install <a href="https://sourceforge.net/projects/launch4j/">Launch4j</a>.
+        </li>
+        <li>Open Launch4j and select the <strong>Basic</strong> tab.</li>
+        <li>Select the folder icon to the right of <strong>Output file</strong>. Choose the
+            output directory your <code>.exe</code> will be created in. Specify the output file
+            name, <em>making sure your file name ends in <code>.exe</code>.</em>
+            Click <strong>Save</strong>.
+        </li>
+        <li>Select the folder icon to the right of <strong>Jar</strong>. Select your
+            IntelliJ-generated JAR file.
+        </li>
+        <!-- <li>Select the <strong>JRE</strong> tab.</li> -->
+        <li>(Optional): Select an <code>.ico</code> file to customize the <code>.exe</code> icon.
+            You can convert images to <code>.ico</code> <a
+                    href="https://www.icoconverter.com/">here</a>.
+        </li>
+        <li>Navigate to the JDK folder. On Windows File Explorer, the path to the JDK is
+            <code>C:\Program Files\Java</code>. Copy the full directory path to the JDK, e.g.,
+            <code>C:\Program Files\Java\jdk-23</code>.
+        </li>
+        <li>In Launch4j, go to the <strong>JRE</strong> tab. Paste the path you copied in the
+            previous step into the <strong>JRE paths</strong> field.
+        </li>
+        <li>Select the Gear icon near the top-left of the Launch4j window, (<strong>Build
+            wrapper</strong>). Enter
+            <code>config</code> in the file name field. Click <strong>Save</strong>.
+        </li>
+        <li>To run the generated <code>.exe</code>, navigate to the output directory and
+            double-click the <code>.exe</code> file.
+        </li>
+    </ol>
+</div>
+</body>
+</html>

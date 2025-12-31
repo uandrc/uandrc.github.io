@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>How to Generate Javadoc</title>
+    <meta name="description" content="How to Generate Javadoc">
+    <meta name="author" content="Andrew Chen">
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+{% include navbar.html %}
+<div id="content">
+    <h1>How to Generate Javadoc</h1>
+
+    <p>Javadoc is a tool for generating API documentation for Java code. It allows you to create a
+        detailed map of your code so other programmers can more quickly and easily understand
+        it.</p>
+    <p>Here is how to generate Javadoc in IntelliJ.</p>
+
+    <h2>Instructions:</h2>
+    <h3>Setup</h3>
+    <ol>
+        <li>Verify your Java code has <a href="https://en.wikipedia.org/wiki/Javadoc">Javadoc
+            comments</a> for all classes, constructors, methods, etc.
+        </li>
+        <li>Verify your Java project uses a JDK: Go to <strong>File -> Project Structure ->
+            SDK</strong>.
+            Ensure a Java SDK is selected.
+        </li>
+    </ol>
+
+    <h3>Generate Javadoc HTML</h3>
+    <ol>
+        <li>Create a folder you want to store the generated Javadoc inside.</li>
+        <li>In IntelliJ, go to <strong>Tools -> Generate Javadoc</strong>.</li>
+        <li>Specify your Javadoc scope and options (select the output directory you created in Step
+            1 here).
+        </li>
+        <li>Click <strong>Generate</strong>.</li>
+        <li>By default, IntelliJ will automatically open the generated Javadoc in a browser window.
+            If not, find and open the <code>index.html</code> file in your output directory to view
+            the main Javadoc HTML file.
+        </li>
+    </ol>
+</div>
+</body>
+</html>
