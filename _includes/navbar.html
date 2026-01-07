@@ -1,36 +1,56 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
+
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target="#navbar"
+                    aria-expanded="false"
+                    aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="./">Andrew Chen</a>
 
-            <!-- FIX ABOVE! WHEN IN PROJECTS HTML, PRESSING ANDREW CHEN GOES TO /CODE (404) -->
-
+            <!-- Always go to site root -->
+            <a class="navbar-brand" href="/">Andrew Chen</a>
         </div>
+
         <div id="navbar" class="navbar-collapse collapse">
+
+            <!-- LEFT SIDE NAV -->
             <ul class="nav navbar-nav">
-                <li><a href="/home.html">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="/index.html">About</a></li>
                 <li><a href="/code/projects.html">Projects</a></li>
                 <li><a href="/gallery.html">Gallery</a></li>
                 <li><a href="/contact.html">Contact</a></li>
                 <li><a href="/cv.pdf">CV</a></li>
                 <li><a href="/more.html">More</a></li>
-
-                <!-- INSERT THE SEARCH BAR HTML BELOW -->
-
-                <form method="get" action="https://www.google.com/search" target="_blank">
-                    <input type="text" name="q" placeholder="Search">
-                    <input type="hidden" name="q" value="site:andrchen.com">
-                    <button type="submit">&#128269;</button>
-                </form>
             </ul>
+
+            <!-- RIGHT SIDE SEARCH -->
+            <form class="navbar-form navbar-right"
+                  method="get"
+                  action="https://www.google.com/search"
+                  target="_blank">
+
+                <div class="form-group">
+                    <input type="text"
+                           class="form-control"
+                           name="q"
+                           placeholder="Search site">
+                </div>
+
+                <!-- site restriction -->
+                <input type="hidden" name="q" value="site:andrchen.com">
+
+                <button type="submit" class="btn btn-default">
+                    <span class="glyphicon glyphicon-search"></span>
+                </button>
+            </form>
+
         </div>
     </div>
 </nav>
